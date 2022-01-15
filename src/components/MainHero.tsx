@@ -120,9 +120,7 @@ const MainHero = () => {
         </h1>
         <s.SpacerSmall />
         <h5 className="text-4xl tracking-tight font-extrabold text-gray-900 xl:inline">
-        {blockchain.account === '' || blockchain.smartContract === null ? (
-          null
-        ) : (
+        {blockchain.account === '' || blockchain.smartContract === null ? null : (
                   <>
                   <span className="block xl:inline">
           {data.totalSupply} / {CONFIG.MAX_SUPPLY}
