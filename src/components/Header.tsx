@@ -14,7 +14,7 @@ const Menu = () => {
   return (
     <>
         <title>Metaverse Workers Club</title>
-       <meta name="description" content="Mint your Metaverse Workers Club NFT" /> 
+       {/* <meta name="description" content="Mint your Metaverse Workers Club NFT" />  */}
       <svg
         className={`hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-background transform translate-x-1/2`}
         fill="currentColor"
