@@ -1,0 +1,160 @@
+{
+  "company": {
+    "name": "React landing page 2021",
+    "logo": "/assets/images/logo.png"
+  },
+  "navigation": [
+    {
+      "name": "About",
+      "href": "product"
+    },
+    {
+      "name": "Roadmap",
+      "href": "features"
+    },
+
+    {
+      "name": "FAQ",
+      "href": "pricing"
+    },
+    {
+      "name": "Team",
+      "href": "about"
+    }
+  ],
+  "callToAction": {
+    "text": "OpenSea",
+    "href": "https://testnets.opensea.io/collection/weird-workers"
+  },
+  "mainHero": {
+    "title": "Metaverse",
+    "subtitle": "Workers Club NFT",
+    "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
+    "img": "/assets/images/bg_2.gif",
+    "primaryAction": {
+      "text": "Get started",
+      "href": "#"
+    },
+    "secondaryAction": {
+      "text": "Email us",
+      "href": "mailto:issaafakattan@gmail.com?subject=I like react landing page!"
+    }
+  },
+  "product": {
+    "title": "What are Metaverse Workers?",
+    "items": [
+      {
+        "title": "Contributors in Metaverse",
+        "description": "METAVERSE, The place where new opportunity for us to contribute and open ended possibilites. Metaverse will create digital platform to expand our limited physical world, including jobs and works. Now Coming to the metaverse 10,000 NFTs based on Workers and future Play-to-earn platform",
+        "img": "/assets/images/product3.png"
+      },
+      {
+        "title": "Future Play-to-Earn Platform",
+        "description": "Mint one Metaverse Workers Club ( MWC ) and hold it to participate in next project's NFT and play in the Play-to-Earn platform , there is no cap on the wallet, means if one wallet is holding 10 MWC ( Minting + Holding ) He/She will have a chance to buy 10 __ NFTs , It is 1:1 NFT to NFT rather than only one NFT / Wallet.",
+        "img": "/assets/images/product2.png"
+      }
+    ]
+  },
+  "features": {
+    "title": "Metaverse Workers",
+    "subtitle": "Roadmap",
+    "description": "End goal of this project is to create working platform with Play-to-Earn concept in the Metaverse, with Metaverse Workers Club ( MWC ) Coin and multiple NFTs that not only hold rarity but also provide value and benefit in working platform for the holders.",
+    "items": [
+      {
+        "name": "Q1 2022",
+        "description": "Dropping our NFTs workers collections, preparing for second Office and Lands NFTs for future Play-to-earn Platforms.",
+        "icon": "/assets/images/green.png"
+      },
+      {
+        "name": "Q2 2022",
+        "description": "Alpha version of Play-to-earn platform with Office and Lands NFTs, to earn unique tokens",
+        "icon": "/assets/images/grey2.png"
+      },
+      {
+        "name": "Q4 2022",
+        "description": "Full release of the Play-to-earn platform, earning mechanism and more NFTs.",
+        "icon": "/assets/images/grey2.png"
+      },
+      {
+        "name": "2023 and beyond",
+        "description": "Developing more features and adding more NFTs content to our platform, owners can also participate in building this platform.",
+        "icon": "/assets/images/grey2.png"
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Pricing",
+    "items": [
+      {
+        "name": "Free",
+        "price": "$0",
+        "priceDetails": "for one user",
+        "features": [
+          "1 user",
+          "Basic Support",
+          "1 GB of storage",
+          "Email support"
+        ]
+      },
+      {
+        "name": "Pro",
+        "price": "$15",
+        "priceDetails": "per user",
+
+        "features": [
+          "5 users",
+          "Priority Support",
+          "10 GB of storage",
+          "Phone and Email support"
+        ]
+      },
+      {
+        "name": "Enterprise",
+        "price": "$29",
+        "priceDetails": "per user",
+        "features": [
+          "50 users",
+          "24/7 Support",
+          "100 GB of storage",
+          "Phone and Email support"
+        ]
+      }
+    ]
+  },
+  "about": {
+    "sections": [
+      {
+        "name": "Something",
+        "href": "#",
+        "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+      },
+      {
+        "name": "Something",
+        "href": "#",
+        "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+      },
+      {
+        "name": "Something",
+        "href": "#",
+        "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+      },
+      {
+        "name": "Something",
+        "href": "#",
+        "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+      }
+    ],
+    "socialMedia": {
+      "github": "https://github.com/issaafalkattan",
+      "twitter": "https://twitter.com/issaafkattan",
+      "linkedin": "https://www.linkedin.com/in/issaaf-kattan/"
+    }
+  },
+  "teams": {
+    "title": "Freespace",
+    "subtitle": "Teams",
+    "freespace": "Freespace",
+    "description": "We are developers that believe in real value of blockchain, by implementing use cases, Started from NFTs. Previously develop and publish games and utility apps involving computer vision and AI Technologies in Web 2.0, now start to innovate in Web 3.0",
+    "img": "/assets/images/fs.PNG"
+  }
+}

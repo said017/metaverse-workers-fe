@@ -1,0 +1,18 @@
+{
+  "CONTRACT_ADDRESS": "0x61D3E32d5e5Dfe27c5F541C7f1040c5Ad29f1CBC",
+  "SCAN_LINK": "https://rinkeby.etherscan.io/address/0x61d3e32d5e5dfe27c5f541c7f1040c5ad29f1cbc",
+  "NETWORK": {
+    "NAME": "Ethereum",
+    "SYMBOL": "ETH",
+    "ID": 4
+  },
+  "NFT_NAME": "Metaverse Workers NFT",
+  "SYMBOL": "MWC",
+  "MAX_SUPPLY": 10000,
+  "WEI_COST": 10000000000000000,
+  "DISPLAY_COST": 0.01,
+  "GAS_LIMIT": 285000,
+  "MARKETPLACE": "Opeansea",
+  "MARKETPLACE_LINK": "https://testnets.opensea.io/collection/weird-workers",
+  "SHOW_BACKGROUND": true
+}
