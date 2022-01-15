@@ -120,21 +120,30 @@ const MainHero = () => {
         </h1>
         <s.SpacerSmall />
         <h5 className="text-4xl tracking-tight font-extrabold text-gray-900 xl:inline">
-          <span className="block xl:inline">
-            {data.totalSupply} / {CONFIG.MAX_SUPPLY}
-          </span>{' '}
-          <span className={`block font-normal xl:inline`}>minted</span>
+        {blockchain.account === '' || blockchain.smartContract === null ? (
+          null
+        ) : (
+                  <>
+                  <span className="block xl:inline">
+          {data.totalSupply} / {CONFIG.MAX_SUPPLY}
+        </span>{' '}
+        <span className={`block font-normal xl:inline`}>minted</span>
+        </>
+        ) 
+        }
         </h5>
+        {/* data.totalSupply */}
         {Number(data.totalSupply) >= CONFIG.MAX_SUPPLY ? (
           <>
             <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
               {'The sale has ended'}
             </p>
             <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-              You can still find {CONFIG.NFT_NAME} on{' '}
+              You can still find {CONFIG.NFT_NAME} on{' '} <br></br> <br></br>
               <a
                 href={CONFIG.MARKETPLACE_LINK}
-                className={`w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-background bg-primary hover:bg-border hover:text-primary md:py-4 md:text-lg md:px-10`}
+                target="_blank"
+                className={`w-180 items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-background bg-primary hover:bg-border hover:text-primary md:py-4 md:text-lg md:px-10`}
               >
                 {CONFIG.MARKETPLACE}
               </a>
@@ -243,7 +252,7 @@ const MainHero = () => {
                       getData();
                     }}
                   >
-                    {claimingNft ? 'BUSY' : 'BUY'}
+                    {claimingNft ? 'WAIT' : 'BUY'}
                   </button>
                 </s.Container>
               </>

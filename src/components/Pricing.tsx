@@ -53,7 +53,7 @@ const config = {
 
 export default function App() {
   return (
-    <section className={`bg-background py-8`} id="pricing">
+    <section className={`bg-background py-8`} id="faq">
       <div className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
         <Faq data={data} styles={styles} config={config} />
       </div>

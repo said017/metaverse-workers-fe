@@ -6,7 +6,7 @@ const Team = () => {
   const { teams } = config;
   const { title, subtitle } = teams;
   return (
-    <div className={`py-12 bg-background`} id="features">
+    <div className={`py-12 bg-background`} id="team">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="lg:text-center">
           <h2

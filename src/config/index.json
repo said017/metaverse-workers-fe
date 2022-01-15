@@ -1,25 +1,25 @@
 {
   "company": {
-    "name": "React landing page 2021",
+    "name": "Metaverse Workers Club",
     "logo": "/assets/images/logo.png"
   },
   "navigation": [
     {
       "name": "About",
-      "href": "product"
+      "href": "about" 
     },
     {
       "name": "Roadmap",
-      "href": "features"
+      "href": "roadmap"
     },
 
     {
       "name": "FAQ",
-      "href": "pricing"
+      "href": "faq"
     },
     {
       "name": "Team",
-      "href": "about"
+      "href": "team"
     }
   ],
   "callToAction": {
@@ -145,16 +145,15 @@
       }
     ],
     "socialMedia": {
-      "github": "https://github.com/issaafalkattan",
-      "twitter": "https://twitter.com/issaafkattan",
-      "linkedin": "https://www.linkedin.com/in/issaaf-kattan/"
+      "twitter": "https://twitter.com/metaworkersclub",
+      "discord": "https://discord.gg/5ncRAJqn"
     }
   },
   "teams": {
     "title": "Freespace",
     "subtitle": "Teams",
     "freespace": "Freespace",
-    "description": "We are developers that believe in real value of blockchain, by implementing use cases, Started from NFTs. Previously develop and publish games and utility apps involving computer vision and AI Technologies in Web 2.0, now start to innovate in Web 3.0",
+    "description": "We are developers that believe in real value of blockchain, by implementing use cases, Started from NFTs. Previously developed games and utility apps involving computer vision and AI Technologies in Web 2.0, now start to innovate in Web 3.0",
     "img": "/assets/images/fs.PNG"
   }
 }
