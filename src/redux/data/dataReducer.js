@@ -1,7 +1,7 @@
 const initialState = {
   loading: false,
   totalSupply: 0,
-  paused: false,
+  paused: true,
   // isWhitelisted: false,
   onlyWhitelisted: true,
   error: false,
