@@ -36,7 +36,7 @@ const MainHero = () => {
     SHOW_BACKGROUND: false,
   });
   
-  let whitelistedAddress:string[] = ["0xca03e5939598306b74a2ba866d5a263103625549"];
+  const whitelistedAddress:string[] = ["0xca03e5939598306b74a2ba866d5a263103625549"];
 
   const claimNFTs = () => {
     const cost = CONFIG.WEI_COST;
