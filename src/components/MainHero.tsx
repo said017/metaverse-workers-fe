@@ -7,7 +7,7 @@ import { connect } from '../redux/blockchain/blockchainActions';
 import { fetchData } from '../redux/data/dataActions';
 import * as s from '../styles/globalStyles';
 
-let isWhitelisted: boolean = false;
+
 
 const MainHero = () => {
   const { mainHero } = config;
@@ -99,7 +99,6 @@ const MainHero = () => {
   const getData = () => {
     if (blockchain.account !== '' && blockchain.smartContract !== null) {
       dispatch(fetchData());
-      isWhitelisted = checkWhitelisted(String(blockchain.account));
 
       // dispatch(fetchData(blockchain.account));
     }
