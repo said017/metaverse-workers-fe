@@ -226,7 +226,7 @@ const MainHero = () => {
                       <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
                         Register for Pre-Sale{' '} <br></br> <br></br>
                         <a
-                          href={CONFIG.MARKETPLACE_LINK}
+                          href="https://twitter.com/metaworkersclub"
                           target="_blank"
                           rel="noreferrer"
                           className={`w-180 items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-background bg-primary hover:bg-border hover:text-primary md:py-4 md:text-lg md:px-10`}

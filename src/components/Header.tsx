@@ -58,7 +58,7 @@ const Menu = () => {
                 </Link>
               ))}
               <a
-                href="https://testnets.opensea.io/collection/weird-workers"
+                href="https://opensea.io/collection/metaverse-workers-club-nft"
                 target="_blank"
                 className={`font-medium text-primary hover:text-secondary`}
                 rel="noreferrer"

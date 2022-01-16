@@ -1,18 +1,18 @@
 {
-  "CONTRACT_ADDRESS": "0xE7C15278b69D9DB520B81435c34337f9fF273ee5",
-  "SCAN_LINK": "https://mumbai.polygonscan.com/address/0xE7C15278b69D9DB520B81435c34337f9fF273ee5",
+  "CONTRACT_ADDRESS": "0xe618bf2BBC7Ab5705aEccE1ff235b5b068c7B487",
+  "SCAN_LINK": "https://polygonscan.com/address/0xe618bf2BBC7Ab5705aEccE1ff235b5b068c7B487",
   "NETWORK": {
     "NAME": "Polygon",
     "SYMBOL": "MATIC",
-    "ID": 80001
+    "ID": 137
   },
   "NFT_NAME": "Metaverse Workers NFT",
   "SYMBOL": "MWC",
   "MAX_SUPPLY": 10000,
-  "WEI_COST": 10000000000000000,
-  "DISPLAY_COST": 0.01,
+  "WEI_COST": 40000000000000000000,
+  "DISPLAY_COST": 40,
   "GAS_LIMIT": 285000,
   "MARKETPLACE": "Opeansea",
-  "MARKETPLACE_LINK": "https://testnets.opensea.io/collection/metaverse-workers-club-nft-v4",
+  "MARKETPLACE_LINK": "https://opensea.io/collection/metaverse-workers-club-nft",
   "SHOW_BACKGROUND": true
 }
