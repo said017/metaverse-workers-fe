@@ -1,7 +1,9 @@
 const initialState = {
   loading: false,
   totalSupply: 0,
-  cost: 0,
+  paused: false,
+  // isWhitelisted: false,
+  onlyWhitelisted: true,
   error: false,
   errorMsg: "",
 };
@@ -20,7 +22,9 @@ const dataReducer = (state = initialState, action) => {
         ...state,
         loading: false,
         totalSupply: action.payload.totalSupply,
-        // cost: action.payload.cost,
+        paused: action.payload.paused,
+        // isWhitelisted: action.payload.isWhitelisted,
+        onlyWhitelisted:action.payload.onlyWhitelisted,
         error: false,
         errorMsg: "",
       };

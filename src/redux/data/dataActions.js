@@ -29,15 +29,26 @@ export const fetchData = () => {
         .getState()
         .blockchain.smartContract.methods.totalSupply()
         .call();
-      // let cost = await store
-      //   .getState()
-      //   .blockchain.smartContract.methods.cost()
+      let paused = await store
+        .getState()
+        .blockchain.smartContract.methods.paused()
+        .call();
+      // // let isWhitelisted = await store
+      // //   .getState()
+      // //   .blockchain.smartContract.methods.isWhitelisted(blockchain.account)
       //   .call();
+      let onlyWhitelisted = await store
+        .getState()
+        .blockchain.smartContract.methods.onlyWhitelisted()
+        .call();
+      
 
       dispatch(
         fetchDataSuccess({
           totalSupply,
-          // cost,
+          paused,
+          // isWhitelisted,
+          onlyWhitelisted,
         })
       );
     } catch (err) {
