@@ -80,8 +80,8 @@ const MainHero = () => {
   };
 
   const checkWhitelisted = (addr: string) => {
-    for (let i = 0; i < whitelistedAddress.length; i++) {
-      if (whitelistedAddress[i] == addr) {
+    for (let i = 0; i < whitelistedAddress.length; i+=1) {
+      if (whitelistedAddress[i] === addr) {
         return true;
       }
     }
