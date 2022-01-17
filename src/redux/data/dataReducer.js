@@ -3,7 +3,7 @@ const initialState = {
   totalSupply: 0,
   paused: true,
   // isWhitelisted: false,
-  onlyWhitelisted: true,
+  // onlyWhitelisted: true,
   error: false,
   errorMsg: "",
 };

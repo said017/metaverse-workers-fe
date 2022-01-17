@@ -37,10 +37,10 @@ export const fetchData = () => {
       // //   .getState()
       // //   .blockchain.smartContract.methods.isWhitelisted(blockchain.account)
       //   .call();
-      let onlyWhitelisted = await store
-        .getState()
-        .blockchain.smartContract.methods.onlyWhitelisted()
-        .call();
+      // let onlyWhitelisted = await store
+      //   .getState()
+      //   .blockchain.smartContract.methods.onlyWhitelisted()
+      //   .call();
       
 
       dispatch(
@@ -48,7 +48,7 @@ export const fetchData = () => {
           totalSupply,
           paused,
           // isWhitelisted,
-          onlyWhitelisted,
+          // onlyWhitelisted,
         })
       );
     } catch (err) {

@@ -35,11 +35,20 @@ const MainHero = () => {
     MARKETPLACE_LINK: '',
     SHOW_BACKGROUND: false,
   });
-  
-  const whitelistedAddress:string[] = ["0xca03e5939598306b74a2ba866d5a263103625549"];
 
-  const claimNFTs = () => {
-    const cost = CONFIG.WEI_COST;
+  const updateCost = (token:number) => {
+    if (token<=1000) {
+      return 0;
+    }
+    if (token<=7000) {
+      return 35000000000000000000;
+    }
+    return 40000000000000000000;
+}
+  
+
+  const claimNFTs = (totalSupply:number) => {
+    const cost = updateCost(totalSupply);
     const gasLimit = CONFIG.GAS_LIMIT;
     const totalCostWei = String(cost * mintAmount);
     const totalGasLimit = String(gasLimit * mintAmount);
@@ -77,15 +86,6 @@ const MainHero = () => {
       newMintAmount = 1;
     }
     setMintAmount(newMintAmount);
-  };
-
-  const checkWhitelisted = (addr: string) => {
-    for (let i = 0; i < whitelistedAddress.length; i+=1) {
-      if (whitelistedAddress[i] === addr) {
-        return true;
-      }
-    }
-    return false;
   };
 
   const incrementMintAmount = (max: any) => {
@@ -170,11 +170,22 @@ const MainHero = () => {
               <span className={`block font-bold xl:inline`}>
                 1 {CONFIG.SYMBOL}{' '}
               </span>{' '}
-              costs{' '}
+            
               <span className={`block font-bold xl:inline`}>
-                {CONFIG.DISPLAY_COST} {CONFIG.NETWORK.SYMBOL}
-              </span>
-              . Excluding gas fees.
+                is FREE for first 1000 Mint.{' '} <br></br>
+              </span>  
+              <span className={`block font-bold xl:inline`}>
+              35 Matic
+              </span>{' '}
+              for first{' '} 
+              <span className={`block font-bold xl:inline`}>
+              2000 - 7000. <br></br>
+              </span>{' '}
+              and{' '}
+              <span className={`block font-bold xl:inline`}>
+              40 Matic 
+              </span>{' '}
+              for the rest. Excluding gas fees.
             </p>
 
             {/* <s.SpacerSmall /> */}
@@ -224,87 +235,18 @@ const MainHero = () => {
                         {'Coming Soon'}
                       </p>
                       <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-                        Register for Pre-Sale{' '} <br></br> <br></br>
+                        Follow for the Drop Date{' '} <br></br> <br></br>
                         <a
                           href="https://twitter.com/metaworkersclub"
                           target="_blank"
                           rel="noreferrer"
                           className={`w-180 items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-background bg-primary hover:bg-border hover:text-primary md:py-4 md:text-lg md:px-10`}
                         >
-                          Register
+                          Follow
                         </a>
                       </p>
                     </>
                     ) : (
-                      <>
-                      {Boolean(data.onlyWhitelisted)  ? (
-                        <>
-                        {checkWhitelisted(String(blockchain.account))  ? (
-                          <>
-                                          <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-                  {feedback}
-                </p>
-                <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start"></div>
-                {/* <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start"></div> */}
-                {/* ai={"center"} jc={"center"}  */}
-                <s.Container ai={'center'} fd={'row'}>
-                  <button
-                    className="rounded-full h-16 w-16 border border-transparent text-base font-medium rounded-md text-background bg-primary hover:bg-border hover:text-primary md:text-lg"
-                    style={{ lineHeight: 0.4 }}
-                    disabled={!!claimingNft}
-                    onClick={(e) => {
-                      e.preventDefault();
-                      decrementMintAmount();
-                    }}
-                  >
-                    -
-                  </button>
-                  <s.SpacerMedium />
-                  <s.TextDescription
-                    style={{
-                      textAlign: 'center',
-                      color: 'var(--accent-text)',
-                    }}
-                  >
-                    {mintAmount}
-                  </s.TextDescription>
-                  <s.SpacerMedium />
-                  <button
-                    className="rounded-full h-16 w-16 border border-transparent text-base font-medium rounded-md text-background bg-primary hover:bg-border hover:text-primary md:text-lg"
-                    disabled={!!claimingNft}
-                    onClick={(e) => {
-                      e.preventDefault();
-                      incrementMintAmount(3);
-                    }}
-                  >
-                    +
-                  </button>
-                </s.Container>
-                <s.SpacerMedium />
-                {/* ai={"center"} jc={"center"}  */}
-                <s.Container ai={'center'} fd={'row'}>
-                  <button
-                    className={`h-16 w-48 border border-transparent text-base font-medium rounded-md text-background bg-primary hover:bg-border hover:text-primary md:py-4 md:text-lg md:px-10`}
-                    disabled={!!claimingNft}
-                    onClick={(e) => {
-                      e.preventDefault();
-                      claimNFTs();
-                      getData();
-                    }}
-                  >
-                    {claimingNft ? 'WAIT' : 'BUY'}
-                  </button>
-                </s.Container>
-                          </>
-                        ) : (
-                          <>
-                                                <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-                        {'You are not Whitelisted, wait for the public sale'} 
-                      </p>
-                          </>
-                        ) }
-                        </>
-                      ) : (
                         <>
                                         <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
                   {feedback}
@@ -353,7 +295,7 @@ const MainHero = () => {
                     disabled={!!claimingNft}
                     onClick={(e) => {
                       e.preventDefault();
-                      claimNFTs();
+                      claimNFTs(data.totalSupply);
                       getData();
                     }}
                   >
@@ -361,8 +303,6 @@ const MainHero = () => {
                   </button>
                 </s.Container>
                         </>
-                      ) }
-                      </>
                     )}
 
               </>
