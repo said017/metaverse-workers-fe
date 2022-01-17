@@ -9,7 +9,7 @@ const data = {
     },
     {
       title: 'How Much is Metaverse Workers NFT?',
-      content: `For the Whitelist Private Sale the price will be 40 MATIC + gas price and you will be able to mint a max of 3 Workers. For the Public Sale the price will be 40 MATIC + gas price and you will be able to mint a max of 5 Workers per transaction.`,
+      content: `For the Whitelist Private Sale the price will be 25 MATIC + gas price and you will be able to mint a max of 3 Workers. For the Public Sale the price will be 40 MATIC + gas price and you will be able to mint a max of 5 Workers per transaction.`,
     },
     {
       title: 'How do I purchase an NFT?',
