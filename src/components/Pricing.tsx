@@ -9,7 +9,7 @@ const data = {
     },
     {
       title: 'How Much is Metaverse Workers NFT?',
-      content: `For the Whitelist Private Sale the price will be 25 MATIC + gas price and you will be able to mint a max of 3 Workers. For the Public Sale the price will be 40 MATIC + gas price and you will be able to mint a max of 5 Workers per transaction.`,
+      content: `For the first 1000 Mint will be FREE. 35 MATIC + gas price and you will be able to mint a max of 5 Workers per transaction for until 7000 Mint. For the rest is 40 Matic.`,
     },
     {
       title: 'How do I purchase an NFT?',
@@ -23,7 +23,7 @@ const data = {
     {
       title: 'Do I get full rights on my NFTs?',
       content:
-        'Yes, In the sum of eth price not including transaction fees, The Metaverse Workers hereby transfers to purchasers full title and all rights and interests with 2.5% secondary royalty, You will be the owner of the nft and it is absolutely 1/1 & Secured on ERC-721 token.',
+        'Yes, In the sum of eth price not including transaction fees, The Metaverse Workers hereby transfers to purchasers full title and all rights and interests with 5% secondary royalty, You will be the owner of the nft and it is absolutely 1/1 & Secured on ERC-721 token.',
     },
   ],
 };
