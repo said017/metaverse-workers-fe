@@ -168,12 +168,12 @@ const MainHero = () => {
           <>
             <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
               <span className={`block font-bold xl:inline`}>
-                1 {CONFIG.SYMBOL}{' '}
+<!--                 1 {CONFIG.SYMBOL}{' '}
               </span>{' '}
             
               <span className={`block font-bold xl:inline`}>
                 is FREE for first 1000 Mint.{' '} <br></br>
-              </span>  
+              </span>   -->
               <span className={`block font-bold xl:inline`}>
               35 Matic
               </span>{' '}
