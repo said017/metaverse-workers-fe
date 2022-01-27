@@ -11,7 +11,7 @@
   "MAX_SUPPLY": 10000,
   "WEI_COST": 40000000000000000000,
   "DISPLAY_COST": 40,
-  "GAS_LIMIT": 425000,
+  "GAS_LIMIT": 285000,
   "MARKETPLACE": "Opeansea",
   "MARKETPLACE_LINK": "https://opensea.io/collection/metaverse-workers-club-nft",
   "SHOW_BACKGROUND": true
