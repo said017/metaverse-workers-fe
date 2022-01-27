@@ -37,10 +37,10 @@ const MainHero = () => {
   });
 
   const updateCost = (token:number) => {
-    if (token<=1000) {
+    if (token<1000) {
       return 0;
     }
-    if (token<=7000) {
+    if (token<7000) {
       return 35000000000000000000;
     }
     return 40000000000000000000;
@@ -172,7 +172,7 @@ const MainHero = () => {
               </span>{' '}
               for first{' '} 
               <span className={`block font-bold xl:inline`}>
-              2000 - 7000. <br></br>
+              1000 - 7000. <br></br>
               </span>{' '}
               and{' '}
               <span className={`block font-bold xl:inline`}>
