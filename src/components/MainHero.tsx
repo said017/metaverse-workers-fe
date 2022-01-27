@@ -3,7 +3,6 @@ import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector, RootStateOrAny } from 'react-redux';
 
 import config from '../config/index.json';
-import { connect } from '../redux/blockchain/blockchainActions';
 import { fetchData } from '../redux/data/dataActions';
 import * as s from '../styles/globalStyles';
 
