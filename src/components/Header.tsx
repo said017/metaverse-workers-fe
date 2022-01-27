@@ -146,7 +146,7 @@ const Menu = () => {
                 ))}
               </div>
               <a
-                href="https://testnets.opensea.io/collection/weird-workers"
+                href="https://opensea.io/collection/metaverse-workers-club-nft"
                 className={`block w-full px-5 py-3 text-center font-medium text-primary bg-gray-50 hover:bg-gray-100`}
               >
                 OpenSea
