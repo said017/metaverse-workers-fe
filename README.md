@@ -1,6 +1,6 @@
-# React.js landing page template v2
+# Metaverse Workers Club NFT (Front End)
 
-## <a href="https://react-landing-page-template-2021.vercel.app/"> LIVE DEMO</a>
+## <a href="https://www.metaverseworkersclub.com/"> LIVE DEMO</a>
 
 <img src="public/assets/gifs/demo.gif" width="100%" height="auto" />
 
@@ -36,8 +36,8 @@ Built-in feature from Next.js:
 #### 1. Clone repo
 
 ```
-git clone https://github.com/issaafalkattan/react-landing-page-template-2021.git
-cd react-landing-page-template-2021
+git clone https://github.com/said017/metaverse-workers-fe.git
+cd metaverse-workers-fe
 yarn
 ```
 
@@ -83,13 +83,3 @@ Everyone is welcome to contribute to this project. Feel free to open an issue if
 ### License
 
 Licensed under the MIT License, Copyright © 2021
-  
-
-## Liked this template? <a href="https://www.buymeacoffee.com/issaaf">Buy me a coffee ☕️</a>
-
-
-
-
----
-
-### Looking for v1? <a href="https://github.com/issaafalkattan/React-Landing-Page-Template">V1</a>
